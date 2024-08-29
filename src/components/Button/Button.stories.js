@@ -5,6 +5,18 @@ export default {
     title: 'Form/Button',
     component: Button,
     tags: ['autodocs'],
+    args: {
+        children: 'Button',
+    },
+    decorators: [
+        (Story) => {
+            console.log("button decorator");
+
+            return <div>
+                <Story/>
+            </div>
+        }
+    ]
 }
 
 export const Primary = {
