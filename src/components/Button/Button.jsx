@@ -1,14 +1,17 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import './button.css'
+import {
+    Button as MuiButton
+} from '@mui/material';
+
 
 function Button(props) {
     const {variant = 'primary', children, ...rest} = props
 
     return (
-        <button className={`button ${variant}`} {...rest}>
+        <MuiButton color={variant} variant='outlined' {...rest}>
             {children}
-        </button>
+        </MuiButton>
     )
 }
 

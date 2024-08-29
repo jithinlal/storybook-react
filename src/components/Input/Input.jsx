@@ -1,17 +1,18 @@
 import React from 'react'
 import PropTypes from "prop-types";
-import './input.css'
+// import './input.css'
+import {TextField as MuiTextField} from "@mui/material";
 
 function Input(props) {
     const {size = 'medium', placeholder, ...rest} = props
 
     return (
-        <input type="text" className={`input ${size}`} {...rest} placeholder={placeholder}/>
+        <MuiTextField type="text" label={placeholder} {...rest} size={size}/>
     )
 }
 
 Input.propTypes = {
-    size: PropTypes.oneOf(['small', 'medium', 'large']),
+    size: PropTypes.oneOf(['small', 'medium']),
     placeholder: PropTypes.string,
 }
 

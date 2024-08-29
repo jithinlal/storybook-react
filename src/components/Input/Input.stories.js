@@ -7,13 +7,6 @@ export default {
     tags: ['autodocs'],
 }
 
-export const Large = {
-    args: {
-        size: 'large',
-        placeholder: 'Large placeholder'
-    }
-}
-
 export const Medium = {
     args: {
         size: 'medium',

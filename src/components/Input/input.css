@@ -1,6 +1,6 @@
 .input {
     display: inline-block;
-    padding: 0 16px 0 12px;    
+    padding: 0 16px 0 12px;
     line-height: 30px;
     height: 32px;
     border: 1px solid #dddbda;
@@ -12,6 +12,7 @@
         border-color: #1b96ff;        
         box-shadow: rgb(1, 118, 211) 0px 0px 3px 0px;
     }
+    margin: 5px;
 }
 
 .small {

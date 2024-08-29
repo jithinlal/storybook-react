@@ -30,7 +30,7 @@ export const Success = {
 
 export const Danger = {
     args: {
-        variant: 'danger',
+        variant: 'error',
         children: 'Danger',
     }
 }
